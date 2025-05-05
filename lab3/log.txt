@@ -1,0 +1,3 @@
+Log: This is a log message.
+Error: This is an error message.
+Warn: This is a warning message.

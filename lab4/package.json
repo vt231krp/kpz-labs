@@ -1,0 +1,24 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "task1": "ts-node task1/index.ts",
+    "task2": "ts-node task2/index.ts",
+    "task3": "ts-node task3/index.ts",
+    "task4": "ts-node task4/index.ts",
+    "task5": "ts-node task5/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}

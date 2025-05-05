@@ -1,0 +1,31 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const IProneFactory_1 = require("./factories/IProneFactory");
+const KiaomiFactory_1 = require("./factories/KiaomiFactory");
+const BalaxyFactory_1 = require("./factories/BalaxyFactory");
+function createDevice(factory, brand) {
+  console.log(`\n===== ${brand} Devices =====`);
+  const laptop = factory.createLaptop();
+  console.log("\nLaptop:");
+  console.log(`- Description: ${laptop.getDescription()}`);
+  console.log(`- Screen Size: ${laptop.getScreenSize()} inches`);
+  console.log(`- Processor: ${laptop.getProcessorInfo()}`);
+  const netbook = factory.createNetbook();
+  console.log("\nNetbook:");
+  console.log(`- Description: ${netbook.getDescription()}`);
+  console.log(`- Weight: ${netbook.getWeight()} kg`);
+  console.log(`- Battery Life: ${netbook.getBatteryLife()} hours`);
+  const ebook = factory.createEBook();
+  console.log("\nEBook:");
+  console.log(`- Description: ${ebook.getDescription()}`);
+  console.log(`- Screen Type: ${ebook.getScreenType()}`);
+  console.log(`- Storage: ${ebook.getStorageSize()} GB`);
+  const smartphone = factory.createSmartphone();
+  console.log("\nSmartphone:");
+  console.log(`- Description: ${smartphone.getDescription()}`);
+  console.log(`- Camera: ${smartphone.getCameraSpecs()}`);
+  console.log(`- Operating System: ${smartphone.getOS()}`);
+}
+createDevice(new IProneFactory_1.IProneFactory(), "IProne");
+createDevice(new KiaomiFactory_1.KiaomiFactory(), "Kiaomi");
+createDevice(new BalaxyFactory_1.BalaxyFactory(), "Balaxy");
